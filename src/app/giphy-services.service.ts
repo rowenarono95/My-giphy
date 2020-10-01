@@ -13,4 +13,10 @@ export class GiphyServicesService {
     var url = `https://api.giphy.com/v1/gifs/trending?api_key=${environment.giphyApiKey}&limit=30`;
     return this.http.get(url);
   }
+  export class SearchServiceService {
+    http
+    searchGifUrl = `${environment.gifUrl}/search`;
+    stickersUrl =  `${environment.stickerUrl}/search`;
+    apiKey = `${environment.YOUR_API_KEY}`
+    limit = 5
 }
